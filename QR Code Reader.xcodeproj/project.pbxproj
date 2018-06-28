@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		A2F8C92F20E506D400D63C9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F8C92E20E506D400D63C9E /* AppDelegate.swift */; };
-		A2F8C93120E506D400D63C9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F8C93020E506D400D63C9E /* ViewController.swift */; };
+		A2F8C93120E506D400D63C9E /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F8C93020E506D400D63C9E /* ScannerViewController.swift */; };
 		A2F8C93420E506D400D63C9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2F8C93220E506D400D63C9E /* Main.storyboard */; };
 		A2F8C93620E506D500D63C9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2F8C93520E506D500D63C9E /* Assets.xcassets */; };
 		A2F8C93920E506D500D63C9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2F8C93720E506D500D63C9E /* LaunchScreen.storyboard */; };
+		A2F8C94120E50E1F00D63C9E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F8C94020E50E1F00D63C9E /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A2F8C92B20E506D400D63C9E /* QR Code Reader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "QR Code Reader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2F8C92E20E506D400D63C9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A2F8C93020E506D400D63C9E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A2F8C93020E506D400D63C9E /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
 		A2F8C93320E506D400D63C9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A2F8C93520E506D500D63C9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A2F8C93820E506D500D63C9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A2F8C93A20E506D500D63C9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2F8C94020E50E1F00D63C9E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,39 @@
 		A2F8C92D20E506D400D63C9E /* QR Code Reader */ = {
 			isa = PBXGroup;
 			children = (
-				A2F8C92E20E506D400D63C9E /* AppDelegate.swift */,
-				A2F8C93020E506D400D63C9E /* ViewController.swift */,
-				A2F8C93220E506D400D63C9E /* Main.storyboard */,
-				A2F8C93520E506D500D63C9E /* Assets.xcassets */,
-				A2F8C93720E506D500D63C9E /* LaunchScreen.storyboard */,
+				A2F8C94520E5260400D63C9E /* Supporting Files */,
+				A2F8C94420E525F100D63C9E /* Views */,
+				A2F8C94320E525E300D63C9E /* Controllers */,
 				A2F8C93A20E506D500D63C9E /* Info.plist */,
 			);
 			path = "QR Code Reader";
+			sourceTree = "<group>";
+		};
+		A2F8C94320E525E300D63C9E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A2F8C94020E50E1F00D63C9E /* MainViewController.swift */,
+				A2F8C93020E506D400D63C9E /* ScannerViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A2F8C94420E525F100D63C9E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A2F8C93220E506D400D63C9E /* Main.storyboard */,
+				A2F8C93720E506D500D63C9E /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A2F8C94520E5260400D63C9E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A2F8C92E20E506D400D63C9E /* AppDelegate.swift */,
+				A2F8C93520E506D500D63C9E /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +162,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2F8C93120E506D400D63C9E /* ViewController.swift in Sources */,
+				A2F8C93120E506D400D63C9E /* ScannerViewController.swift in Sources */,
+				A2F8C94120E50E1F00D63C9E /* MainViewController.swift in Sources */,
 				A2F8C92F20E506D400D63C9E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
